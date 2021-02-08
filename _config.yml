@@ -1,0 +1,52 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+# permalink:           pretty
+permalink:           /blog/:categories/:year/:month/:day/:title.html
+
+# Setup
+title:               Konstantinos Kirtsonis
+tagline:             'Data Scientist and Software Engineer.'
+description:         'The internet home of Konstantinos Kirtsonis. Data Scientist. Software Engineer. Amateur Philosopher.'
+url:                 'konskyrt.github.io'
+baseurl:             ''
+blogurl:             '/blog'
+paginate:            5
+
+# Pagination
+paginate_path:       'blog/page:num/'
+
+# About/contact
+author:
+  name:              Konstantinos Kirtsonis
+  url:               https://konskyrt.github.io
+  email:             kyrkost@outlook.com
+
+#Gems
+plugins:
+  - jekyll-paginate
+  - github-pages
+  - jekyll-seo-tag
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+    type: "notebook"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "default"
+
+# Compress.html
+compress_html:
+  comments: ["<!-- ", " -->"]
