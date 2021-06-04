@@ -1,11 +1,6 @@
----
-layout: page
-title: About
-description: What I am and what I do.
----
 
 <p class="message">
-  Feel free to check our other parts of the website, too! I'm currently working on adding more content, in the form of additional projects, a blog, and a home page revamp. So there's more to look forward to. :)
+Feel free to check our other parts of the website, too! I'm currently working on adding more content, in the form of additional projects, a blog, and a home page revamp. So there's more to look forward to. :)
 </p>
 
 ### Me
@@ -30,15 +25,11 @@ Thankfully, I'm not a cat.
 
 ### Certificates I've completed:
 
-To feed my hunger for learning, I take online courses for different Data Science topics and work independently on projects in my free time. Some of them include:
+To feed my hunger for learning, I do different Data Science courses and work independently on projects in my free time. Some of them include:
 
-* Machine Learning Engineer Nanodegree - by Kaggle and Google - Udacity
-* Statistics Specialization: Introduction to Probability and Data - by Duke University - Coursera
-* Statistics Specialization: Inferential Statistics - by Duke University - Coursera
-* Big Data Foundations, including Hadoop and Spark - by IBM - Big Data University
-* Data Science and Machine Learning with R - Udemy
+
+* Data Science Bootcamp from Propulsion Academy Zürich
 * Python Data Science and Machine Learning Bootcamp - Udemy
-* React Nanodegree - Udacity (Currently fighting deadlines)
 
 Check out my [portfolio](/portfolio) to see iPython notebooks and Github repos for some of the projects I've worked on.
 
