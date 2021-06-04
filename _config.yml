@@ -7,7 +7,7 @@ permalink:           /blog/:categories/:year/:month/:day/:title.html
 # Setup
 title:               Konstantinos Kirtsonis
 tagline:             'Data Scientist and Software Engineer.'
-description:         'The internet home of Konstantinos Kirtsonis. Data Scientist. Software Engineer. Amateur Philosopher.'
+description:         'The internet home of Konstantinos Kirtsonis. Data Scientist. Amateur Philosopher.'
 url:                 'konskyrt.github.io'
 baseurl:             ''
 blogurl:             '/blog'
