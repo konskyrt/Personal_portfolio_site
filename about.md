@@ -19,7 +19,7 @@ R • Python • Statistics • Visualization • Tableau • Microsoft Office �
 
 for use with concepts such as:
 
-Machine Learning Algorithms, Data Analytics, Statistical Data Analysis, Natural Language Processing, Data Visualization, Database Systems & Information Modelling • Software Engineering • Web Application Development, <em>and more!</em>
+Data Analytics, Machine Learning Algorithms, Statistical Data Analysis, Data Visualization, Database Systems & Information Modelling <em>and more!</em>
 
 Thankfully, I'm not a cat.
 
