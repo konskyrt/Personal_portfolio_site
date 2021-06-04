@@ -1,6 +1,6 @@
 
 <p class="message">
-Feel free to check our other parts of the website, too! I'm currently working on adding more content, in the form of additional projects, a blog, and a home page revamp. So there's more to look forward to. :)
+Feel free to check the other parts of the website, too! I'm currently working on adding more content, in the form of additional projects, a blog, and a home page revamp. So there's more to look forward to. :)
 </p>
 
 ### Me
