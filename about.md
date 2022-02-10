@@ -29,7 +29,7 @@ To feed my hunger for learning, I do different Data Science courses and work ind
 
 
 * Data Science Bootcamp from Propulsion Academy Zürich
-* Python Data Science and Machine Learning Bootcamp - Udemy
+
 
 Check out my [portfolio](/portfolio) to see iPython notebooks and Github repos for some of the projects I've worked on.
 
