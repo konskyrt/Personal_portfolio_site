@@ -4,7 +4,7 @@ title: Solar panel efficiency
 skills: R, Exploratory Data Analysis, gplot, dplyr
 external_type: Github
 external_url: https://github.com/konskyrt/Machine-learning-for-a-solar-power-plant
-description: This is the final project during my 3 month bootcamp studies at Propulsion Academy Zurich. It was a collaboartion with Nispera AG Zurich.
+description: This is the final project during my 3 month bootcamp studies at Schaffhausen Institute of Technology. It was a collaboration with Nispera AG Zurich.
 ---
 
 This is the final project during my 3 month bootcamp studies at Propulsion Academy Zurich. It was a collaboartion with Nispera AG Zurich.
