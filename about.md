@@ -5,7 +5,7 @@ Feel free to check the other parts of the website, too! I'm currently working on
 
 ### Me
 
-Hi, I'm Konstantinos Kirtsonis.
+Hi, I'm Konstantinos Kyrtsonis.
 
 I'm also <em>really</em> Cooking, reading, friends and hiking.
 
@@ -28,7 +28,7 @@ Thankfully, I'm not a cat.
 To feed my hunger for learning, I do different Data Science courses and work independently on projects in my free time. Some of them include:
 
 
-* Data Science Bootcamp from Propulsion Academy Zürich
+* Data Science Bootcamp from Schaffhausen Institute of Technology
 
 
 Check out my [portfolio](/portfolio) to see iPython notebooks and Github repos for some of the projects I've worked on.
