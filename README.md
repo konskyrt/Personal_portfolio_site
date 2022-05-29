@@ -1,1 +1,0 @@
-# konskyrt.github.io
