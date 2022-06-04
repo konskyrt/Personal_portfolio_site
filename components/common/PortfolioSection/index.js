@@ -1,27 +1,63 @@
 import React from 'react'
+import PortfolioProjectCategory from './PortfolioProjectCategory'
 import PortfolioProjectItem from './PortfolioProjectItem'
 import Fade from 'react-reveal/Fade'
+import { Carousel } from 'react-bootstrap'
+import IFC from '../IFC'
 
 const PortfolioSection = ({ projects = [] }) => {
-  const renderProjects = () => projects.map(project => {
-    const { title, description, skills, images } = project.frontmatter
+
+  const renderProjects = (category) => {
+    const categoryProjects = projects.filter(p => p.frontmatter.category === category);
     return (
-      <Fade bottom key={title}>
-        <PortfolioProjectItem
-          title={title}
-          description={description}
-          skills={skills}
-          images={images}
-        />
-      </Fade>
+      <div>
+        <Carousel variant="dark" interval={10000}>
+          {categoryProjects.map(project => {
+            const { title, description, skills, images } = project.frontmatter
+            return (
+              <Carousel.Item key={title}>
+                <PortfolioProjectItem
+                  title={title}
+                  description={description}
+                  skills={skills}
+                  images={images}
+                />
+              </Carousel.Item>
+            )
+          })}
+        </Carousel>
+      </div>
     )
-  })
+  }
+
+  const renderIFCViewer = () => {
+    return <IFC />
+  }
 
   return (
     <div className='portfolio-section-component'>
-      <h1>Portfolio</h1>
-      <p>A selection of cool stuff I have worked on.</p>
-      {renderProjects()}
+      <Fade>
+        <h1>Portfolio</h1>
+        <p>A selection of cool stuff I have worked on.</p>
+        <PortfolioProjectCategory
+          title="Computational Design, Scripting"
+          description="Top Computational design projects and automation processes that I created"
+        >
+          {renderProjects("CATEGORTY_ONE")}
+        </PortfolioProjectCategory>
+        <PortfolioProjectCategory
+          title="Ifc development"
+          description="Ifc.js is an Opensource Javascript library to load, display and edit ifc models in the browser. The Ifc.js parsing engine is based on Webassembly and C++ and is specifically designed to read data from large files as fast as a desktop application"
+        >
+          {renderIFCViewer()}
+        </PortfolioProjectCategory>
+        <PortfolioProjectCategory
+          title="Data Science Projects"
+          description="Top data science projects I've worked on"
+        >
+          {renderProjects("CATEGORTY_THREE")}
+        </PortfolioProjectCategory>
+      </Fade>
     </div>
   )
 }

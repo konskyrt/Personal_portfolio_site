@@ -26,7 +26,7 @@ const SideBar = ({ collapsed }) => {
                 height={180}
               />
             </div>
-            <p>Welcome to the internet home of <span className='name-text'>Konstantinos Kyrtsonis</span>. Aspiring Data Scientist and Amateur Philosopher.</p>
+            <p>Welcome to the internet home of <span className='name-text'>Konstantinos Kyrtsonis</span>. Programmer, Engineer and Amateur Philosopher.</p>
             <p>Feel free to look around, check out my portfolio, or get in touch.</p>
             <div className='social-acounts-container'>
               <a href='https://www.linkedin.com/in/konstantinoskirtsonis' target='_blank' rel='noreferrer'>

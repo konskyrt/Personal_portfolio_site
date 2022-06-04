@@ -17,7 +17,11 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "18.1.0",
     "react-reveal": "^1.2.2",
-    "typed.js": "^2.0.12"
+    "react-tsparticles": "^2.0.6",
+    "three": "^0.141.0",
+    "tsparticles": "^2.0.6",
+    "typed.js": "^2.0.12",
+    "web-ifc-three": "^0.0.117"
   },
   "devDependencies": {
     "eslint": "8.16.0",

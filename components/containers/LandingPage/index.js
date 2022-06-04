@@ -9,6 +9,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import TopNavBar from '../../common/TopNavBar'
 import SkillsSection from '../../common/SkillsSection'
 import ContactSection from '../../common/ContactSection'
+import ParticlesBackground from '../../common/ParticlesBackground'
 
 const { Header, Content } = Layout;
 
@@ -18,9 +19,10 @@ const LandingPage = ({ projects }) => {
 
   return (
     <div className='landing-page-component'>
-    <Head>
-      <title>Konstantinos Kyrtsonis</title>
-    </Head>
+      <ParticlesBackground />
+      <Head>
+        <title>Konstantinos Kyrtsonis</title>
+      </Head>
       <Layout>
         <SideBar collapsed={sidBarCollapsed} />
         <Layout className="landing-page-layout">

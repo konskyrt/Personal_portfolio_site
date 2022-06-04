@@ -1,5 +1,6 @@
 ---
 layout: notebook
+category: CATEGORTY_THREE
 title: Predicting Home Prices
 skills: R, Exploratory Data Analysis, gplot, dplyr
 external_type: Github

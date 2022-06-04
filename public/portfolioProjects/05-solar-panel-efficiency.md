@@ -1,5 +1,6 @@
 ---
 layout: notebook
+category: CATEGORTY_THREE
 title: Solar panel efficiency
 skills: R, Exploratory Data Analysis, gplot, dplyr
 external_type: Github
