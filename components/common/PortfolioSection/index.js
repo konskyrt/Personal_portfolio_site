@@ -13,7 +13,7 @@ const PortfolioSection = ({ projects = [] }) => {
       <div>
         <Carousel variant="dark" interval={10000}>
           {categoryProjects.map(project => {
-            const { title, description, skills, images } = project.frontmatter
+            const { title, description, skills, images, videos } = project.frontmatter
             return (
               <Carousel.Item key={title}>
                 <PortfolioProjectItem
@@ -21,6 +21,7 @@ const PortfolioSection = ({ projects = [] }) => {
                   description={description}
                   skills={skills}
                   images={images}
+                  videos={videos}
                 />
               </Carousel.Item>
             )
