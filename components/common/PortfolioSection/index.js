@@ -41,8 +41,14 @@ const PortfolioSection = ({ projects = [] }) => {
         <h1>Portfolio</h1>
         <p>A selection of cool stuff I have worked on.</p>
         <PortfolioProjectCategory
-          title="Computational Design, Scripting"
-          description="Top Computational design projects and automation processes that I created"
+          title="Data Science Projects"
+          description="Top data science projects I've worked on"
+        >
+          {renderProjects("CATEGORTY_THREE")}
+        </PortfolioProjectCategory>
+        <PortfolioProjectCategory
+          title="3D BIM Programming"
+          description="3D BIM development projects I have worked on"
         >
           {renderProjects("CATEGORTY_ONE")}
         </PortfolioProjectCategory>
@@ -51,12 +57,6 @@ const PortfolioSection = ({ projects = [] }) => {
           description="Ifc.js is an Opensource Javascript library to load, display and edit ifc models in the browser. The Ifc.js parsing engine is based on Webassembly and C++ and is specifically designed to read data from large files as fast as a desktop application"
         >
           {renderIFCViewer()}
-        </PortfolioProjectCategory>
-        <PortfolioProjectCategory
-          title="Data Science Projects"
-          description="Top data science projects I've worked on"
-        >
-          {renderProjects("CATEGORTY_THREE")}
         </PortfolioProjectCategory>
       </Fade>
     </div>
