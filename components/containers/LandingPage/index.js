@@ -39,6 +39,13 @@ const LandingPage = ({ projects }) => {
             <Container>
               <Row className='intro-section' id='Home'>
                 <TypedIntroText />
+                <section className='intro-text-section'>
+                  <p className='intro-text-heading'>Hey!</p>
+                  <p className='intro-text-description'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique facilisis ipsum sed consequat. Nullam elementum nisl mauris, nec congue turpis faucibus eget. Vestibulum at arcu ac ante cursus eleifend. Vivamus quis eleifend erat. Integer in orci nibh. Proin pharetra ex eu rhoncus feugiat.
+                    Nullam elementum nisl mauris, nec congue turpis faucibus eget. Vestibulum at arcu ac ante cursus eleifend. Vivamus quis eleifend erat. Integer in orci nibh. Proin pharetra ex eu rhoncus feugiat.
+                  </p>
+                </section>
               </Row>
               <Row className='protfolio-section' id='Portfolio'>
                 <PortfolioSection projects={projects} />

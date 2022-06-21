@@ -1,8 +1,9 @@
 import React from 'react'
 import { Divider, Layout, Button } from 'antd'
-import { DownloadOutlined, GithubOutlined, LinkedinFilled } from '@ant-design/icons'
+import { DownloadOutlined } from '@ant-design/icons'
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade'
+import SocialLinkIcons from '../SocialLinkIcons'
 
 const { Sider } = Layout
 
@@ -28,14 +29,7 @@ const SideBar = ({ collapsed }) => {
             </div>
             <p>Welcome to the internet home of <span className='name-text'>Konstantinos Kyrtsonis</span>. Programmer, Engineer and Amateur Philosopher.</p>
             <p>Feel free to look around, check out my portfolio, or get in touch.</p>
-            <div className='social-acounts-container'>
-              <a href='https://www.linkedin.com/in/konstantinoskirtsonis' target='_blank' rel='noreferrer'>
-                <LinkedinFilled style={{ fontSize: 30 }} />
-              </a>
-              <a href='https://github.com/konskyrt' target='_blank' rel='noreferrer'>
-                <GithubOutlined style={{ fontSize: 30 }} />
-              </a>
-            </div>
+            <SocialLinkIcons />
             <Divider />
             <Button
               className='white-button'

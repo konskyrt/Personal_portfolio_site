@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
 import Fade from 'react-reveal/Fade'
+import SocialLinkIcons from '../SocialLinkIcons'
 
 const TypedIntroText = ({ }) => {
   const typedElementOne = useRef(null)
   const typedElementTwo = useRef(null)
   const typedElementThree = useRef(null)
 
-  const STRINGS_ONE = ["Hi, I am Konstantinos Kyrtsonis."]
+  const STRINGS_ONE = ["Konstantinos Kyrtsonis."]
   const STRINGS_TWO = ["Programmer and Engineer. I am passionate about"]
   const STRINGS_THREE = ["understanding cause and effect.", "extracting decision making insight.", "helping machines learn.", "making the world a better place."]
 
@@ -50,6 +51,7 @@ const TypedIntroText = ({ }) => {
       <div className='typed-intro-text'>
         <h1 ref={typedElementOne}></h1>
         <p><span ref={typedElementTwo}></span> <b><span ref={typedElementThree}></span></b></p>
+        <SocialLinkIcons isDarkIcons={true} />
       </div>
     </Fade>
   )
