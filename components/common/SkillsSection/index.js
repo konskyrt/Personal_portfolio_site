@@ -15,13 +15,16 @@ const SkillsSection = () => {
         </p>
         <div className='tags-container'>
           <Tag color="blue">Python</Tag>
+          <Tag color="blue">C++</Tag>
+          <Tag color="blue">Forge</Tag>
+          <Tag color="blue">3D Development</Tag>
+          <Tag color="blue">PowerBI</Tag>
           <Tag color="blue">Statistics</Tag>
           <Tag color="blue">Visualization</Tag>
           <Tag color="blue">Tableau</Tag>
           <Tag color="blue">Microsoft Office</Tag>
           <Tag color="blue">Data Mining</Tag>
           <Tag color="blue">SQL</Tag>
-          <Tag color="blue">JAVA</Tag>
         </div>
         <p>
           For use with concepts such as:

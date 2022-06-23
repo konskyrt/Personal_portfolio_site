@@ -42,8 +42,13 @@ const LandingPage = ({ projects }) => {
                 <section className='intro-text-section'>
                   <p className='intro-text-heading'>Hey!</p>
                   <p className='intro-text-description'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique facilisis ipsum sed consequat. Nullam elementum nisl mauris, nec congue turpis faucibus eget. Vestibulum at arcu ac ante cursus eleifend. Vivamus quis eleifend erat. Integer in orci nibh. Proin pharetra ex eu rhoncus feugiat.
-                    Nullam elementum nisl mauris, nec congue turpis faucibus eget. Vestibulum at arcu ac ante cursus eleifend. Vivamus quis eleifend erat. Integer in orci nibh. Proin pharetra ex eu rhoncus feugiat.
+                    I am Konstantinos Kyrtsonis!
+                  </p>
+                  <p className='intro-text-description'>
+                    I love programming, as well as playing music, hiking and learning new things!
+                  </p>
+                  <p className='intro-text-description'>
+                    Feel free to get in touch or take a look at my past work below.
                   </p>
                 </section>
               </Row>
