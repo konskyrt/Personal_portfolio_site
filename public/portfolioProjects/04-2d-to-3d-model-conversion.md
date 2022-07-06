@@ -7,7 +7,7 @@ external_type: Github
 external_url: https://github.com/konskyrt
 description: Creation of 3D Models on top of 2D Drawings in Revit is a mundane task when we are modelling to many objects.
 images:
-  - /images/projects/2d-to-3d-model-conversion/one.png
+  - /images/projects/2d-to-3d-model-conversion/one.gif
 ---
 
 Creation of 3D Models on top of 2D Drawings in Revit is a mundane task when we are modelling to many objects. This Dynamo Script can convert 2D Imported Drawings to 3D Solids automatically.
