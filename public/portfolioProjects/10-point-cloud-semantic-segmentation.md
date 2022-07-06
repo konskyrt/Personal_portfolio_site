@@ -1,6 +1,6 @@
 ---
 layout: notebook
-category: CATEGORTY_ONE
+category: CATEGORTY_THREE
 title: Point Cloud Semantic Segmentation
 skills: Python, Keras, Tensorflow
 external_type: Github
