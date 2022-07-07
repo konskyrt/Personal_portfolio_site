@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react'
 import { Fade } from 'react-reveal';
+// import {
+//   IFCBUILDINGELEMENTPROXY,
+//   IFCSLAB,
+//   IFCBEAM
+// } from 'web-ifc';
 import {
   AmbientLight,
   AxesHelper,
@@ -129,13 +134,21 @@ const IFC = () => {
         return raycaster.intersectObjects(ifcModels);
       }
 
-      const pick = (event) => {
+      const pick = async (event) => {
         const found = cast(event)[0];
         if (found) {
           const index = found.faceIndex;
           const geometry = found.object.geometry;
-          const ifc = ifcLoader.ifcManager;
-          const id = ifc.getExpressId(geometry, index);
+          const id = ifcLoader.ifcManager.getExpressId(geometry, index);
+
+          const props = await ifcLoader.ifcManager.getItemProperties(0, id);
+
+          console.log("props ", props)
+
+          if (props) {
+            alert(`ID = ${id} | Name = ${props.Name.value}`)
+          }
+
         }
       }
 
@@ -148,14 +161,13 @@ const IFC = () => {
         color: 0xff88ff,
         depthTest: false
       })
-      const ifc = ifcLoader.ifcManager;
       // Sets up optimized picking
-      ifc.setupThreeMeshBVH(computeBoundsTree, disposeBoundsTree, acceleratedRaycast);
+      ifcLoader.ifcManager.setupThreeMeshBVH(computeBoundsTree, disposeBoundsTree, acceleratedRaycast);
 
       // Reference to the previous selection
       let preselectModel = { id: - 1 };
 
-      const highlight = (event, material, model) => {
+      const highlight = async (event, material, model) => {
         const found = cast(event)[0];
 
         if (found) {
@@ -165,7 +177,7 @@ const IFC = () => {
           // Gets Express ID
           const index = found.faceIndex;
           const geometry = found.object.geometry;
-          const id = ifc.getExpressId(geometry, index);
+          const id = ifcLoader.ifcManager.getExpressId(geometry, index);
 
           const subsetConfig = {
             modelID: 0,
@@ -177,10 +189,10 @@ const IFC = () => {
           }
 
           // Creates subset
-          ifc.createSubset(subsetConfig)
+          ifcLoader.ifcManager.createSubset(subsetConfig)
         } else {
           // Removes previous highlight
-          ifc.removeSubset(model.id, material);
+          ifcLoader.ifcManager.removeSubset(model.id, material);
         }
       }
 
@@ -188,7 +200,83 @@ const IFC = () => {
         event,
         preselectMat,
         preselectModel);
+
+      // // List of categories names
+      // const categories = {
+      //   IFCBUILDINGELEMENTPROXY,
+      //   IFCBEAM,
+      //   IFCSLAB,
+      // };
+
+      // // Gets the name of a category
+      // const getName = (category) => {
+      //   const names = Object.keys(categories);
+      //   return names.find(name => categories[name] === category);
+      // }
+
+      // // Gets the IDs of all the items of a specific category
+      // const getAll = async (category) => {
+      //   return ifcLoader.ifcManager.getAllItemsOfType(0, category, false);
+      // }
+
+      // // Creates a new subset containing all elements of a category
+      // const newSubsetOfType = async (category) => {
+      //   const ids = await getAll(category);
+      //   return ifcLoader.ifcManager.createSubset({
+      //     modelID: 0,
+      //     scene,
+      //     ids,
+      //     removePrevious: true,
+      //     customID: category.toString()
+      //   })
+      // }
+
+      // // Stores the created subsets
+      // const subsets = {};
+
+      // const setupAllCategories = async () => {
+      //   const allCategories = Object.values(categories);
+      //   for (let i = 0; i < allCategories.length; i++) {
+      //     const category = allCategories[i];
+      //     await setupCategory(category);
+      //   }
+      // }
+
+      // // Creates a new subset and configures the checkbox
+      // const setupCategory = async (category) => {
+      //   subsets[category] = await newSubsetOfType(category);
+      //   setupCheckBox(category);
+      // }
+
+      // // Sets up the checkbox event to hide / show elements
+      // const setupCheckBox = (category) => {
+      //   const name = getName(category);
+      //   const checkBox = document.getElementById(name);
+
+      //   checkBox.addEventListener('change', (event) => {
+
+      //     const checked = event.target.checked;
+
+      //     console.log("changeee", checked, category)
+
+      //     const subset = subsets[category];
+      //     // if (checked) scene.add(subset);
+      //     // else subset.removeFromParent();
+
+      //     console.log("subset ", subset)
+
+      //     //scene.remove(subset)
+          
+      //     subset.removeFromParent();
+      //   });
+      // }
+
+      // setTimeout(() => {
+      //   setupAllCategories()
+      //   console.log("setupAllCategories")
+      // }, 3000);
     }
+
     init()
   }, [])
 
@@ -197,6 +285,21 @@ const IFC = () => {
       <div className='ifc-component-container'>
         <canvas id="three-canvas"></canvas>
       </div>
+
+      {/*<div className="checkboxes">
+        <div>
+          <input id="IFCBEAM" type="checkbox" />
+          IFCBEAM
+        </div>
+        <div>
+          <input id="IFCBUILDINGELEMENTPROXY" type="checkbox" />
+          IFCBUILDINGELEMENTPROXY
+        </div>
+        <div>
+          <input id="IFCSLAB" type="checkbox" />
+          Slabs
+        </div>
+      </div>*/}
     </Fade>
   )
 }
