@@ -13,12 +13,7 @@ const SocialLinkIcons = ({ isDarkIcons = false }) => {
           <a href='https://github.com/konskyrt' target='_blank' rel='noreferrer'>
             <GithubOutlined style={{ fontSize: 30 }} />
           </a>
-          <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
-            <TwitterCircleFilled style={{ fontSize: 30 }} />
-          </a>
-          <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
-            <FacebookFilled style={{ fontSize: 30 }} />
-          </a>
+
         </div>
       </div>
     </Fade>
