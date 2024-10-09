@@ -9,7 +9,7 @@ const TypedIntroText = ({ }) => {
   const typedElementThree = useRef(null)
 
   const STRINGS_ONE = ["Konstantinos Kyrtsonis."]
-  const STRINGS_TWO = ["Programmer and Engineer. I am passionate about"]
+  const STRINGS_TWO = ["Data Scientist and Engineer. I am passionate about"]
   const STRINGS_THREE = ["understanding cause and effect.", "extracting decision making insight.", "helping machines learn.", "making the world a better place."]
 
   useEffect(() => {
