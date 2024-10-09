@@ -39,12 +39,13 @@ const SkillsSection = () => {
           <Tag color="blue">And More</Tag>
         </div>
 
-        <h4>Certificates I have completed</h4>
+        <h4>Qualifications</h4>
         <p>
-          To feed my hunger for learning, I do different Data Science courses and work independently on projects in my free time. Some of them include:
+          To feed my hunger for learning, I study the Data Science Technology and Innovation postgraduate Program part time (Top 15 worldwide in 2023), while working as a Data Scientist full-time. I have also participated in Kaggle competitions and hackathons, and work independently on projects in my free time:
         </p>
         <ul>
-          <li>Data Science Bootcamp from Schaffhausen Institute of Technology</li>
+          <li>Data Science, Technology and Innovation MSc at the University of Edinburgh</li>
+          <li>Data Science Bootcamp from Constructor University</li>
         </ul>
       </div>
     </Fade>
