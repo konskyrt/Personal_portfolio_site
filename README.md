@@ -1,3 +1,3 @@
 ## My portfolio website
 
-[konskyrt.tk](https://www.konskyrt.com)
+[konskyrt.com](https://www.konskyrt.com)
