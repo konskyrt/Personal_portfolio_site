@@ -105,7 +105,7 @@ const IFC = () => {
       const ifcModels = [];
       const ifcLoader = new IFCLoader.IFCLoader();
       await ifcLoader.ifcManager.setWasmPath("../../../../");
-      ifcLoader.load("/ifcs/one.ifc", (ifcModel) => {
+      ifcLoader.load("/ifcs/three.ifc", (ifcModel) => {
         scene.add(ifcModel)
         ifcModels.push(ifcModel);
       });
