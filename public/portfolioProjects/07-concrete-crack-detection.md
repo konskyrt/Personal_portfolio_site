@@ -4,11 +4,11 @@ category: CATEGORTY_THREE
 title: Concrete Crack Detection
 skills: R, Exploratory Data Analysis, gplot, dplyr
 external_type: Github
-external_url: https://github.com/konskyrt/Concrete-Crack-Detection
+external_url: https://github.com/konskyrt/Concrete-Crack-Detection-Segmentation
 description: This repository contains the code for crack detection in concrete surfaces. It is a PyTorch implementation of the paper by Young-Jin Cha and Wooram Choi Deep Learning-Based Crack Damage Detection Using Convolutional Neural Networks
 images:
-  - /images/projects/concrete-crack-detection/one.png
   - /images/projects/concrete-crack-detection/two.png
+  - /images/projects/concrete-crack-detection/one.png
 ---
 
 This repository contains the code for crack detection in concrete surfaces. It is a PyTorch implementation of the paper by Young-Jin Cha and Wooram Choi - "Deep Learning-Based Crack Damage Detection Using Convolutional Neural Networks"
