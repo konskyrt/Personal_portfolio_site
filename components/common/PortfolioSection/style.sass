@@ -1,7 +1,7 @@
 .portfolio-section-component
   .portfolio-project-category-component
     text-align: center
-    padding: 40px 100px
+    padding: 40px 60px
     background: #f4f4f4cb
     border-radius: 5px
     margin: 0px 0px 40px 0px
@@ -17,34 +17,77 @@
     .ifc-loading
       padding: 20px
       text-align: center
+
+    .project-list
+      display: flex
+      flex-direction: column
+      gap: 40px
+      margin-top: 30px
+
     .portfolio-project-item-component
-      margin: 20px 0px
       background: #fff
       border: 1px solid #dbdbdb
-      border-radius: 5px
-      padding: 40px 50px
+      border-radius: 8px
+      padding: 48px 56px
       width: 100%
-      margin-bottom: 50px
-      .portfolio-project-item-header
-        display: flex
-        align-items: center
-        justify-content: space-between
-        .title-text
-          font-size: 20px
+      min-height: 420px
+      text-align: left
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06)
+      transition: box-shadow 0.2s ease
+      &:hover
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1)
+
+      .project-card-header
+        margin-bottom: 32px
+        border-bottom: 2px solid #1b1d2f
+        padding-bottom: 20px
+        .project-title
+          font-size: 24px
+          font-weight: 700
+          color: #1b1d2f
+          margin-bottom: 8px
+        .project-scope
+          font-size: 15px
           font-weight: 500
-          margin-bottom: 15px
-          text-align: center
-          width: 100%
-      .main-text
-        font-size: 14px
-        margin-bottom: 15px
-      .sub-text
-        color: #707070
-        font-size: 14px
-        margin-bottom: 25px
-        font-weight: 300
-        text-align: center
+          color: #555
+          font-style: italic
+          margin-bottom: 0
+
+      .project-card-body
+        .project-section
+          margin-bottom: 24px
+          .section-label
+            font-size: 13px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1px
+            color: #1b1d2f
+            margin-bottom: 8px
+          .section-content
+            font-size: 15px
+            font-weight: 400
+            color: #333
+            line-height: 1.7
+
+        .project-skills-tags
+          margin-bottom: 24px
+          display: flex
+          flex-wrap: wrap
+          gap: 6px
+
+        .project-media
+          margin: 24px 0
+          border-radius: 6px
+          overflow: hidden
+
+        .project-references
+          background: #f9f9fb
+          padding: 16px 20px
+          border-radius: 6px
+          border-left: 3px solid #1b1d2f
+          .section-content
+            font-size: 14px
+            color: #555
+
   .carousel-control-next, .carousel-control-prev
     width: 5% !important
-    
-    
