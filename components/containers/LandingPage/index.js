@@ -5,6 +5,7 @@ import SideBar from '../../common/SideBar'
 import SideBarToggleButton from '../../common/SideBarToggleButton'
 import TypedIntroText from '../../common/TypedIntroText'
 import PortfolioSection from '../../common/PortfolioSection'
+import IFCViewer from '../../common/IFC'
 import { Container, Row, Col } from 'react-bootstrap'
 import TopNavBar from '../../common/TopNavBar'
 import SkillsSection from '../../common/SkillsSection'
@@ -21,7 +22,7 @@ const LandingPage = ({ projects }) => {
     <div className='landing-page-component'>
       <ParticlesBackground />
       <Head>
-        <title>Konstantinos Kyrtsonis</title>
+        <title>Konstantinos Kyrtsonis — AI Engineer</title>
       </Head>
       <Layout>
         <SideBar collapsed={sidBarCollapsed} />
@@ -45,7 +46,10 @@ const LandingPage = ({ projects }) => {
                     I am Konstantinos Kyrtsonis!
                   </p>
                   <p className='intro-text-description'>
-                    I love programming, as well as playing music, hiking and learning new things!
+                    Passionate about developing innovative solutions in fast-paced environments, with over 4 years of experience in the data field I am a mission-oriented professional with expertise in AI Engineering, LLMs, Computer Vision and Data Science.
+                  </p>
+                  <p className='intro-text-description'>
+                    What I love doing: being curious about analyzing data, creating automated pipelines, finding cause and effect, and explaining them to people. Finding the optimal way to use LLMs and RAG to solve business problems is what drives me. I am interested in finding ways to make innovative solutions not only as research but to solve real business problems.
                   </p>
                   <p className='intro-text-description'>
                     Feel free to get in touch or take a look at my past work below.
@@ -54,6 +58,9 @@ const LandingPage = ({ projects }) => {
               </Row>
               <Row className='protfolio-section' id='Portfolio'>
                 <PortfolioSection projects={projects} />
+              </Row>
+              <Row className='bim-viewer-section' id='BIMViewer'>
+                <IFCViewer />
               </Row>
               <Row className='skills-section' id='Skills'>
                 <SkillsSection />

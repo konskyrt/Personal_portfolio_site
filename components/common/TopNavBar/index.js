@@ -5,6 +5,7 @@ const TopNavBar = ({ }) => {
     <div className='top-nav-bar-component'>
       <a href='#Home'>Home</a>
       <a href='#Portfolio'>Portfolio</a>
+      <a href='#BIMViewer'>BIM Viewer</a>
       <a href='#Skills'>Skills</a>
       <a href='#Contact'>Contact</a>
     </div>
