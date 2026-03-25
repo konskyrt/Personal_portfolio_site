@@ -34,12 +34,11 @@ const SideBar = ({ collapsed }) => {
             <Button
               className='white-button'
               icon={<DownloadOutlined />}
-              onClick={() => window.open("https://drive.google.com/file/d/1mSfBO1gQKzn8DB-I4yLoNeluX1TKnQec/view?usp=sharing", "_blank")}
+              onClick={() => window.open("/Konstantinos_Kyrtsonis_CV.pdf", "_blank")}
             >
               Download Resume
             </Button>
             <Divider />
-            <p className='side-bar-footer-text'>© 2022 Konstantinos Kirtsonis. All rights reserved.</p>
           </div>
         </Fade>
       )}
