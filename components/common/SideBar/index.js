@@ -27,7 +27,7 @@ const SideBar = ({ collapsed }) => {
                 height={180}
               />
             </div>
-            <p>Welcome to the internet home of <span className='name-text'>Konstantinos Kyrtsonis</span>. Programmer, Engineer and Amateur Philosopher.</p>
+            <p>Welcome to the internet home of <span className='name-text'>Konstantinos Kyrtsonis</span>. AI Engineer specializing in construction-tech and intelligent systems.</p>
             <p>Feel free to look around, check out my portfolio, or get in touch.</p>
             <SocialLinkIcons />
             <Divider />

@@ -9,8 +9,8 @@ const TypedIntroText = ({ }) => {
   const typedElementThree = useRef(null)
 
   const STRINGS_ONE = ["Konstantinos Kyrtsonis."]
-  const STRINGS_TWO = ["Data Scientist and Engineer. I am passionate about"]
-  const STRINGS_THREE = ["understanding cause and effect.", "extracting decision making insight.", "helping machines learn.", "making the world a better place."]
+  const STRINGS_TWO = ["AI Engineer. I am passionate about"]
+  const STRINGS_THREE = ["building intelligent systems.", "construction-tech innovation.", "making machines understand data.", "turning complexity into clarity."]
 
   useEffect(() => {
     const typedOne = new Typed(typedElementOne.current, {
