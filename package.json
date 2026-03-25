@@ -24,6 +24,9 @@
     "typed.js": "^2.0.12",
     "web-ifc-three": "^0.0.117"
   },
+  "engines": {
+    "node": ">=18.x"
+  },
   "devDependencies": {
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
